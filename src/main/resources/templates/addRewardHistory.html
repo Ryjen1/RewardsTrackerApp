@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Reward History</title>
+</head>
+<body>
+<h1>Add Reward History</h1>
+<form action="#" th:action="@{/addRewardHistory}" th:object="${rewardHistory}" method="post">
+    <label for="customerId">Customer ID:</label>
+    <input type="number" id="customerId" th:field="*{customerId}" required />
+    <br/>
+    <label for="transactionDate">Transaction Date:</label>
+    <input type="date" id="transactionDate" th:field="*{transactionDate}" required />
+    <br/>
+    <label for="amountEarned">Amount Earned:</label>
+    <input type="number" step="0.01" id="amountEarned" th:field="*{amountEarned}" required />
+    <br/>
+    <label for="description">Description:</label>
+    <textarea id="description" th:field="*{description}" required></textarea>
+    <br/>
+    <button type="submit">Add Reward History</button>
+</form>
+</body>
+</html>
