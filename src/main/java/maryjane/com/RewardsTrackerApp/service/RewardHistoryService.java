@@ -21,9 +21,6 @@ public class RewardHistoryService {
         if (rewardHistoryRepository.existsByTransactionId(rewardHistory.getTransactionId())) {
             throw new RuntimeException("Transaction ID already exists.");
         }
-        if (rewardHistoryRepository.existsByCustomerId(rewardHistory.getCustomerId())) {
-            throw new RuntimeException("Customer ID already exists.");
-        }
         return rewardHistoryRepository.save(rewardHistory);
     }
 }
