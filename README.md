@@ -40,17 +40,23 @@ The `RewardsTrackerApp` is a Spring Boot application designed to manage reward h
    ```
 The application will start on http://localhost:8080.
 
-~**Endpoints**
-~**Reward History**
+## Endpoints
+
+## Reward History
+
 ~**Get Reward History by Customer ID**
 
 ~**URL:** /api/rewards/history/{customerId}
+
 ~**Method:** GET
+
 ~**Response:** HTML page showing the reward history.
+
 ~**Add Reward History**
 
-~**URL:** /api/rewards/post_history
+~**URL:** http://localhost:8080/api/rewards/post_history
 ~**Method:** POST
+
 ~**Request Body (JSON):**
 ```sh
 {
@@ -62,17 +68,24 @@ The application will start on http://localhost:8080.
 }
 ````
 ~**Response:** JSON object representing the added reward history.
-~**Reward Balance**
-~**Get Reward Balance by Customer ID**
 
-~**URL:** /api/rewards/balance/{customerId}
+## Reward Balance
+
+~ **Get Reward Balance by Customer ID**
+
+~**URL:** http://localhost:8080/api/rewards/balance/{customerId}
+
 ~**Method:** GET
+
 ~**Response:** HTML page showing the total cashback and current balance.
 
-~**Create or Update Reward**
-~**URL:** /api/rewards/balance
-~**Method:** POST
-~**Request Body (JSON):**
+~ **Create or Update Reward**.
+
+~**URL:** http://localhost:8080/api/rewards/balance
+
+~ **Method:** POST
+
+~ **Request Body (JSON):**
 ```sh
 {
 "customerId": 78910,
@@ -83,9 +96,7 @@ The application will start on http://localhost:8080.
 Response: JSON object representing the created or updated reward.
 ## Configuration
 Date Format: Ensure that date strings in JSON requests and responses follow the format `yyyy-MM-dd`.
-## Contribution
-Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss the changes you would like to make.
 
 ## Contact
-~**Author:** Maryjane Ukamaka Okafor
+~ **Author:** Maryjane Ukamaka Okafor
 ~**LinkedIn:** www.linkedin.com/in/iyukay
