@@ -1,8 +1,11 @@
 package maryjane.com.RewardsTrackerApp.dto;
 
-public class RewardBalance {
+import jakarta.validation.constraints.NotNull;
 
+public class RewardBalance {
+    @NotNull(message = "Total cashback must not be null")
     private Long totalCashback;
+    @NotNull(message = "Balance must not be null")
     private Long currentBalance;
 
     public RewardBalance(Long totalCashback, Long currentBalance) {

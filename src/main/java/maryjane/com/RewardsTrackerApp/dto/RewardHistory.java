@@ -1,15 +1,25 @@
 package maryjane.com.RewardsTrackerApp.dto;
 
-import java.util.Date;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import java.time.LocalDate;
 
 public class RewardHistory {
+
+    @NotNull(message = "Transaction ID must not be null")
     private Long transactionId;
-    private Date transactionDate;
-    private double amountEarned;
+    @NotNull(message = "Customer ID must not be null")
+    private Long customerId;
+    @NotNull(message = "Transaction date must not be null")
+    private LocalDate transactionDate;
+    @NotNull(message = "Amount earned must not be null")
+    private Double amountEarned;
+    @NotEmpty(message = "Description must not be empty")
     private String description;
 
-    public RewardHistory(Long transactionId, Date transactionDate, double amountEarned, String description) {
+    public RewardHistory(Long transactionId, Long customerId, LocalDate transactionDate, Double amountEarned, String description) {
         this.transactionId = transactionId;
+        this.customerId = customerId;
         this.transactionDate = transactionDate;
         this.amountEarned = amountEarned;
         this.description = description;
@@ -23,19 +33,27 @@ public class RewardHistory {
         this.transactionId = transactionId;
     }
 
-    public Date getTransactionDate() {
+    public Long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
+    }
+
+    public LocalDate getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(Date transactionDate) {
+    public void setTransactionDate(LocalDate transactionDate) {
         this.transactionDate = transactionDate;
     }
 
-    public double getAmountEarned() {
+    public Double getAmountEarned() {
         return amountEarned;
     }
 
-    public void setAmountEarned(double amountEarned) {
+    public void setAmountEarned(Double amountEarned) {
         this.amountEarned = amountEarned;
     }
 

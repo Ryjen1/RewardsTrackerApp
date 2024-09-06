@@ -8,5 +8,7 @@ import java.util.List;
 
 @Repository
 public interface RewardHistoryRepository extends JpaRepository<RewardHistory, Long> {
+    boolean existsByTransactionId(Long transactionId);
+    boolean existsByCustomerId(Long customerId);
     List<RewardHistory> findByCustomerId(Long customerId);
 }

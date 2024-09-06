@@ -21,11 +21,11 @@ public class RewardService {
                     reward.getCurrentBalance()
             );
         }
-        return null; // Handle as necessary
+        return null;
     }
 
-    // Create or Update Reward
     public Reward saveOrUpdateReward(Reward reward) {
+
         return rewardRepository.save(reward);
     }
 }

@@ -1,14 +1,20 @@
 package maryjane.com.RewardsTrackerApp.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Reward {
 
     @Id
+    @NotNull(message = "Must not be null")
+    @Column(unique = true)
     private Long customerId;
+    @NotNull(message = "Must not be null")
     private Long totalCashback;
+    @NotNull(message = "Must not be null")
     private Long currentBalance;
 
     public Reward() {}

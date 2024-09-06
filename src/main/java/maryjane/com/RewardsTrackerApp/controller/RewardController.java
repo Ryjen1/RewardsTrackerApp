@@ -15,17 +15,16 @@ public class RewardController {
     @Autowired
     private RewardService rewardService;
 
-    // Get Reward Balance
     @GetMapping("/balance/{customerId}")
     public String getRewardBalanceForView(@PathVariable Long customerId, Model model) {
         RewardBalance rewardBalance = rewardService.getRewardByCustomerId(customerId);
         model.addAttribute("rewardBalance", rewardBalance);
-        return "balance"; // Thymeleaf template name
+        return "balance";
     }
 
 
 
-    // Post new Reward
+
     @PostMapping("/balance")
     @ResponseBody
     public Reward createOrUpdateReward(@RequestBody Reward reward) {

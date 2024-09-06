@@ -3,7 +3,6 @@ package maryjane.com.RewardsTrackerApp.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-
 import java.time.LocalDate;
 import java.util.Date;
 

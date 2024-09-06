@@ -14,10 +14,16 @@ public class RewardHistoryService {
     private RewardHistoryRepository rewardHistoryRepository;
 
     public List<RewardHistory> getRewardHistoryByCustomerId(Long customerId) {
-        return rewardHistoryRepository.findAll();  // Add your filtering logic here
+        return rewardHistoryRepository.findByCustomerId(customerId);
     }
 
     public RewardHistory saveRewardHistory(RewardHistory rewardHistory) {
+        if (rewardHistoryRepository.existsByTransactionId(rewardHistory.getTransactionId())) {
+            throw new RuntimeException("Transaction ID already exists.");
+        }
+        if (rewardHistoryRepository.existsByCustomerId(rewardHistory.getCustomerId())) {
+            throw new RuntimeException("Customer ID already exists.");
+        }
         return rewardHistoryRepository.save(rewardHistory);
     }
 }
