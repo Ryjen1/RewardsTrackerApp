@@ -44,18 +44,19 @@ The application will start on http://localhost:8080.
 
 ## Reward History
 
-~**Get Reward History by Customer ID**
+~ **Get Reward History by Customer ID**
 
-~**URL:** /api/rewards/history/{customerId}
+~ **URL:** /api/rewards/history/{customerId}
 
-~**Method:** GET
+~ **Method:** GET
 
-~**Response:** HTML page showing the reward history.
+~ **Response:** HTML page showing the reward history.
 
-~**Add Reward History**
+~ **Add Reward History**
 
-~**URL:** http://localhost:8080/api/rewards/post_history
-~**Method:** POST
+~ **URL:** http://localhost:8080/api/rewards/post_history
+
+~ **Method:** POST
 
 ~**Request Body (JSON):**
 ```sh
@@ -67,21 +68,21 @@ The application will start on http://localhost:8080.
 "description": "Referral Bonus"
 }
 ````
-~**Response:** JSON object representing the added reward history.
+~ **Response:** JSON object representing the added reward history.
 
 ## Reward Balance
 
 ~ **Get Reward Balance by Customer ID**
 
-~**URL:** http://localhost:8080/api/rewards/balance/{customerId}
+~ **URL:** http://localhost:8080/api/rewards/balance/{customerId}
 
-~**Method:** GET
+~ **Method:** GET
 
-~**Response:** HTML page showing the total cashback and current balance.
+~ **Response:** HTML page showing the total cashback and current balance.
 
 ~ **Create or Update Reward**.
 
-~**URL:** http://localhost:8080/api/rewards/balance
+~ **URL:** http://localhost:8080/api/rewards/balance
 
 ~ **Method:** POST
 
@@ -99,4 +100,5 @@ Date Format: Ensure that date strings in JSON requests and responses follow the 
 
 ## Contact
 ~ **Author:** Maryjane Ukamaka Okafor
-~**LinkedIn:** www.linkedin.com/in/iyukay
+
+~ **LinkedIn:** www.linkedin.com/in/iyukay
