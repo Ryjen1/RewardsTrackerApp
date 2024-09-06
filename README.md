@@ -27,8 +27,6 @@ The `RewardsTrackerApp` is a Spring Boot application designed to manage reward h
 - **Spring Boot Starter Validation:** For input validation using the Validation API.
 - **Spring Boot Starter Web:** For building RESTful web services using Spring MVC.
 - **MySQL Connector Java:** For connecting to a MySQL database.
-- **Spring Boot Starter Test:** For testing the application using Spring's testing support.
-
 
 ## Getting Started
 
@@ -36,6 +34,7 @@ The `RewardsTrackerApp` is a Spring Boot application designed to manage reward h
 
 - Java 17 or higher
 - Maven 3.6+ (or use the wrapper)
+- Postman
 - An IDE like IntelliJ IDEA or Eclipse (optional)
 
 ### Installation
