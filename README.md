@@ -44,15 +44,15 @@ The application will start on http://localhost:8080.
 
 ## Reward History
 
-~ **Get Reward History by Customer ID**
+## Get Reward History by Customer ID
 
-~ **URL:** /api/rewards/history/{customerId}
+~ **URL:** http://localhost:8080/api/rewards/history/{customerId}
 
 ~ **Method:** GET
 
 ~ **Response:** HTML page showing the reward history.
 
-~ **Add Reward History**
+## Add Reward History
 
 ~ **URL:** http://localhost:8080/api/rewards/post_history
 
@@ -72,7 +72,7 @@ The application will start on http://localhost:8080.
 
 ## Reward Balance
 
-~ **Get Reward Balance by Customer ID**
+## Get Reward Balance by Customer ID
 
 ~ **URL:** http://localhost:8080/api/rewards/balance/{customerId}
 
@@ -80,7 +80,7 @@ The application will start on http://localhost:8080.
 
 ~ **Response:** HTML page showing the total cashback and current balance.
 
-~ **Create or Update Reward**.
+## Create or Update Reward.
 
 ~ **URL:** http://localhost:8080/api/rewards/balance
 
