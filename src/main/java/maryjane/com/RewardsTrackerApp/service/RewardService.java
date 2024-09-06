@@ -12,7 +12,6 @@ public class RewardService {
     @Autowired
     private RewardRepository rewardRepository;
 
-    // Get Reward Balance
     public RewardBalance getRewardByCustomerId(Long customerId) {
         Reward reward = rewardRepository.findByCustomerId(customerId);
         if (reward != null) {

@@ -54,7 +54,7 @@ The application will start on http://localhost:8080.
 
 ## Add Reward History
 
-~ **URL:** http://localhost:8080/api/rewards/post_history
+~ **URL:** http://localhost:8080/api/rewards/history/add
 
 ~ **Method:** POST
 

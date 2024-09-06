@@ -27,7 +27,7 @@ public String getRewardHistory(@PathVariable Long customerId, Model model) {
     return "history";
 }
 
-    @PostMapping("/post_history")
+    @PostMapping("/history/add")
     @ResponseBody
     public RewardHistory addRewardHistory(@RequestBody RewardHistory rewardHistory) {
         return rewardHistoryService.saveRewardHistory(rewardHistory);
