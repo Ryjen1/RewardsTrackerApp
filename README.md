@@ -20,6 +20,16 @@ The `RewardsTrackerApp` is a Spring Boot application designed to manage reward h
 - **Jackson:** For JSON parsing and serialization.
 - **Validation API:** For input validation.
 
+## Dependencies
+
+- **Spring Boot Starter Data JPA:** For working with databases using JPA.
+- **Spring Boot Starter Thymeleaf:** For rendering server-side HTML views using Thymeleaf.
+- **Spring Boot Starter Validation:** For input validation using the Validation API.
+- **Spring Boot Starter Web:** For building RESTful web services using Spring MVC.
+- **MySQL Connector Java:** For connecting to a MySQL database.
+- **Spring Boot Starter Test:** For testing the application using Spring's testing support.
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -44,7 +54,7 @@ The application will start on http://localhost:8080.
 
 ## Reward History
 
-## Get Reward History by Customer ID
+### Get Reward History by Customer ID
 
 ~ **URL:** http://localhost:8080/api/rewards/history/{customerId}
 
@@ -52,7 +62,7 @@ The application will start on http://localhost:8080.
 
 ~ **Response:** HTML page showing the reward history.
 
-## Add Reward History
+### Add Reward History
 
 ~ **URL:** http://localhost:8080/api/rewards/history/add
 
@@ -72,7 +82,7 @@ The application will start on http://localhost:8080.
 
 ## Reward Balance
 
-## Get Reward Balance by Customer ID
+### Get Reward Balance by Customer ID
 
 ~ **URL:** http://localhost:8080/api/rewards/balance/{customerId}
 
